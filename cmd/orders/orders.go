@@ -155,7 +155,7 @@ func median(durations []time.Duration) time.Duration {
 	})
 	middle := len(durations) / 2
 	if len(durations)%2 == 0 {
-		return (durations[middle] + durations[middle+1]) / 2
+		return (durations[middle-1] + durations[middle]) / 2
 	}
 
 	middle = len(durations)/2 + 1
